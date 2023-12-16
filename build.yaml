@@ -14,4 +14,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: nice_view
+    shield: rae_dux_left
+  - board: nice_nano_v2
+    shield: rae_dux_right
