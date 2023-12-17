@@ -55,7 +55,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-         spc_backspc space_backspace {
+         spc_backspc: space_backspace {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp BACKSPACE>;
