@@ -75,11 +75,11 @@
             //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │    :;    │
                  &kp A      &kp S    &hm LGUI D &hm LALT F   &kp G          &kp H    &hm RALT J &hm RGUI K   &kp L     &kp SEMI
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │     ?/   │
+            //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ .        │     ?/   │
                  &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
             //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
             //                         L SHIFT    L CTRL                SUMBOLS LAYER SPACE/BACKSPACE ENTER  
-                                     &sk LSHIFT  &sk LCTRL  &kp         &to SUMBOLS &spc_backspc &kp ENTER
+                                     &sk LSHIFT  &sk LCTRL  &kp ENTER     &to SUMBOLS &spc_backspc &kp ENTER
             //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯ 
             >;
         };
@@ -91,7 +91,7 @@
                  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│  "       │  [       │  {       │  (       │          │   │   /      │  -       │  =       │     :    │  ;       │
-                &kp DQT  &kp LBKT   &kp LBRC   &kp LPAR   &trans         &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+                &kp DQT  &kp LBKT   &kp LBRC   &kp LPAR      &trans         &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             //│  '       │  ]       │  }       │  )       │          │   │    \     │  _       │  +       │  │       │   ?      │
                 &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
