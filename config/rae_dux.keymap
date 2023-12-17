@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 &sk {
     release-after-ms = <750>;
@@ -23,17 +24,6 @@
 #define MEDIA   2
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-    // shortcut
-    #define COMBO(NAME, BINDINGS, KEYPOS, TIMEOUT) \
-          combo_##NAME { \
-            timeout-ms = <TIMEOUT>; \
-            bindings = <BINDINGS>; \
-            key-positions = <KEYPOS>; \
-          };
-
         /*                KEY POSITIONS
 
           ╭────────────────────╮ ╭────────────────────╮
@@ -42,7 +32,6 @@
           │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
           ╰───────╮ 30  31  32 │ │ 33  34  35 ╭───────╯
                   ╰────────────╯ ╰────────────╯        */
-    };
 
     behaviors {
         hm: homerow_mods {
