@@ -16,7 +16,7 @@
 &mt {
     flavor = "tap-preffered";
     tapping_term_ms = <200>;
-}
+};
 
 #define MAC 0
 #define SUMBOLS 1
