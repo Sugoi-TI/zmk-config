@@ -6,6 +6,16 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+&sk {
+    release-after-ms = <750>;
+    quick-release;
+};
+
+&mt {
+    flavor = "tap-preffered";
+    tapping_term_ms = <200>;
+};
+
 #define MAC 0
 #define SUMBOLS 1
 #define MEDIA   2
