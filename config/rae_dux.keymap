@@ -45,19 +45,29 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
+             //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+             //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
                  &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U        &kp I       &kp O      &kp P
+             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+             //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │   :;     │
                  &kp A      &kp S      &hm LGUI D &hm LALT F &kp G          &kp H      &hm RALT J   &hm RGUI K  &kp L     &kp SEMI
+             //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+             //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │    /?    │
                  &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M        &kp COMMA   &kp DOT    &kp FSLH
-                                   &sk LSHIFT  &sk LCTRL  &kp BACKSPACE     &to SUMBOLS &kp SPACE &kp ENTER
+             //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                   &sk LSHIFT  &sk LCTRL  &kp TAB         &kp BACKSPACE &kp SPACE &lt SUMBOLS ENTER
+                                  //╰──────────┴──────────┴───────────┤   ├──────────┴──────────┴──────────╯
             >;
         };
 
         sumbols_leayer { 
             bindings = <
+             //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+             //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
                  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
                 &kp DQT  &kp LBKT   &kp LBRC   &kp LPAR      &trans         &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
                 &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
-                                       &trans     &trans    &to MAC       &to MEDIA   &trans     &trans   
+                                       &trans     &trans    &to MAC       &trans   &trans     &lt MEDIA ENTER   
             >;
         };
 
@@ -66,7 +76,7 @@
                  &kp F1     &kp F2     &kp F3     &kp F4     &bt BT_SEL 0     &bt BT_SEL 2  &out OUT_TOG &trans  &kp C_MUTE  &kp C_PP
                  &kp F5     &kp F6     &kp F7     &kp F8     &bt BT_SEL 1     &bt BT_SEL 3  &kp C_BRI_UP  &trans   &kp C_VOL_UP  &kp C_NEXT 
                  &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans   &kp C_VOL_DN &kp C_PREV
-                                          &trans     &trans    &to MAC       &to SUMBOLS   &trans     &trans   
+                                       &trans     &trans    &to MAC       &trans   &trans     &lt MAC ENTER   
             >;
         };
     };
