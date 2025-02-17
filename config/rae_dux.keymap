@@ -32,26 +32,24 @@
             bindings = <&kp>, <&kp>;
         };
 
-        &enter_symbols {
+        enter_symbols: enter_symbols {
             compatible = "zmk,behavior-mod-morph";
             label = "ENTER_OR_SYMBOLS_SWITCH";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&kp ENTER>, <&to SYMBOLS>; 
             mods = <MOD_LALT>;
         };
 
-        &enter_media {
+        enter_media: enter_media {
             compatible = "zmk,behavior-mod-morph";
-            label = "ENTER_OR_MEDIA_SWITCH";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&kp ENTER>, <&to MEDIA>; 
             mods = <MOD_LALT>; 
         };
 
-        &enter_base {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ENTER_OR_BASE_SWITCH";
-            #binding-cells = <2>;
+        enter_base: enter_base {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
             bindings = <&kp ENTER>, <&to BASE>; 
             mods = <MOD_LALT>; 
         };
