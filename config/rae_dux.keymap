@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "ENTER_SYMBOL";
-            bindings = <&kp ENTER>, <&mo SYMBOLS>; 
+            bindings = <&kp ENTER>, <&to SYMBOLS>; 
             mods = <MOD_LALT>;
         };
 
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "ENTER_MEDIA";
-            bindings = <&kp ENTER>, <&mo MEDIA>; 
+            bindings = <&kp ENTER>, <&to MEDIA>; 
             mods = <MOD_LALT>;
         };
 
@@ -52,7 +52,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "ENTER_MEDIA";
-            bindings = <&kp ENTER>, <&mo BASE>; 
+            bindings = <&kp ENTER>, <&to BASE>; 
             mods = <MOD_LALT>;
         };
     };
