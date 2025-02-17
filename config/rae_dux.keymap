@@ -51,7 +51,7 @@
         enter_be: enter_be {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            label = "ENTER_MEDIA";
+            label = "ENTER_BASE";
             bindings = <&kp ENTER>, <&to BASE>; 
             mods = <MOD_LALT>;
         };
