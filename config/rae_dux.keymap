@@ -32,7 +32,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        enter_symbols: enter_symbols {
+        es: enter_symbols {
             compatible = "zmk,behavior-mod-morph";
             label = "ENTER_OR_SYMBOLS_SWITCH";
             #binding-cells = <0>;
@@ -40,19 +40,19 @@
             mods = <MOD_LALT>;
         };
 
-        enter_media: enter_media {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER>, <&to MEDIA>; 
-            mods = <MOD_LALT>; 
-        };
+        // enter_media: enter_media {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp ENTER>, <&to MEDIA>; 
+        //     mods = <MOD_LALT>; 
+        // };
 
-        enter_base: enter_base {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER>, <&to BASE>; 
-            mods = <MOD_LALT>; 
-        };
+        // enter_base: enter_base {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp ENTER>, <&to BASE>; 
+        //     mods = <MOD_LALT>; 
+        // };
 
         //  spc_backspc: space_backspace {
         //     compatible = "zmk,behavior-mod-morph";
@@ -70,7 +70,7 @@
 &kp Q  &kp W  &kp E       &kp R       &kp T    &kp Y          &kp U       &kp I              &kp O    &kp P
 &kp A  &kp S  &hm LGUI D  &hm LALT F  &kp G    &kp H          &hm RALT J  &hm RGUI K         &kp L    &kp SEMI
 &kp Z  &kp X  &kp C       &kp V       &kp B    &kp N          &kp M       &kp COMMA          &kp DOT  &kp FSLH
-              &sk LSHIFT  &sk LCTRL   &kp TAB  &kp BACKSPACE  &kp SPACE   &enter_symbols
+              &sk LSHIFT  &sk LCTRL   &kp TAB  &kp BACKSPACE  &kp SPACE   &es
             >;
         };
 
@@ -79,7 +79,7 @@
 &kp N1        &kp N2        &kp N3        &kp MINUS     &none    &none   &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
 &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL     &none    &none   &none   &none             &kp COLON          &kp SINGLE_QUOTE
 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none    &none   &none   &kp COMMA         &kp PERIOD         &kp QMARK
-                            &trans        &trans        &to BASE  &trans  &trans  &enter_media
+                            &trans        &trans        &to BASE  &trans  &trans  &trans
             >;
         };
 
@@ -88,7 +88,7 @@
 &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0  &bt BT_SEL 2  &out OUT_TOG   &none          &kp C_MUTE    &kp C_PP
 &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1  &bt BT_SEL 3  &kp C_BRI_UP   &none          &kp C_VOL_UP  &kp C_NEXT
 &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR    &bt BT_SEL 4  &kp C_BRI_DEC  &none          &kp C_VOL_DN  &kp C_PREV
-                 &trans   &trans   &to BASE       &trans        &trans         &enter_base
+                 &trans   &trans   &to BASE       &trans        &trans         &trans
             >;
         };
     };
