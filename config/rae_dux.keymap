@@ -32,13 +32,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        es: enter_symbols {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ENTER_OR_SYMBOLS_SWITCH";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER>, <&to SYMBOLS>; 
-            mods = <MOD_LALT>;
-        };
+        // es: enter_symbols {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "ENTER_OR_SYMBOLS_SWITCH";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp ENTER>, <&to SYMBOLS>; 
+        //     mods = <MOD_LALT>;
+        // };
 
         // enter_media: enter_media {
         //     compatible = "zmk,behavior-mod-morph";
@@ -70,7 +70,7 @@
 &kp Q  &kp W  &kp E       &kp R       &kp T    &kp Y          &kp U       &kp I              &kp O    &kp P
 &kp A  &kp S  &hm LGUI D  &hm LALT F  &kp G    &kp H          &hm RALT J  &hm RGUI K         &kp L    &kp SEMI
 &kp Z  &kp X  &kp C       &kp V       &kp B    &kp N          &kp M       &kp COMMA          &kp DOT  &kp FSLH
-              &sk LSHIFT  &sk LCTRL   &kp TAB  &kp BACKSPACE  &kp SPACE   &es
+              &sk LSHIFT  &sk LCTRL   &kp TAB  &kp BACKSPACE  &kp SPACE   & ENTER
             >;
         };
 
