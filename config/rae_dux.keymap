@@ -32,12 +32,12 @@
             bindings = <&kp>, <&kp>;
         };
 
-        // enter_sy: enter_sy {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp ENTER>, <&mo SYMBOLS>; 
-        //     mods = <(MOD_LALT)>;
-        // };
+        enter_sy: enter_sy {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER>, <&mo SYMBOLS>; 
+            mods = <MOD_LALT>;
+        };
 
 
     };
